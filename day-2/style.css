@@ -11,6 +11,7 @@ html , body{
 
 #main{
     width: 100%;
+    background-color: black;
 }
 #hero{
     width: 100%;
@@ -35,57 +36,77 @@ html , body{
     font-size: 1rem;
 }
 
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100.47%);
+}
+
 #heromain{
     width: 100%;
     color: white;
-    padding: 10px 45px;
+    padding: 10px 55px;
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 0.9; 
 }
 
 #heromain h1{
-    font-size: 10rem;
+    font-size: clamp(4rem, 10vw, 10rem);
     opacity: .6;
 }
 
 #heromain #secondh1{
-    margin-left: 6vw;
+    margin-left: clamp(2rem, 6vw, 6rem);
     opacity: .6;
 }
 
 #blocktxt{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
     width: fit-content;
 }
 #blocktxt h5{
+    font-size: .8rem;
     text-align: right;
 }
 
 #smalldesc{
-    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: clamp(4rem, 10vw, 10rem);
 }
 
 #smalldesc h4{
     text-align: right;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.1rem);
     margin-top: 10px;
 }
 
 #herofooter{
-    padding: 0px 40px;
-    margin-top: 3.5rem;
+    padding: 0 clamp(20px, 4vw, 40px); 
+    margin-top: clamp(2rem, 3.5vw, 3.5rem); 
     display: flex;
     justify-content: space-between;
     color: white;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.1vw, 1.1rem);
 }
-.circles{
-    height: 1.7rem;
-    width: 4rem;
+#herofooter a{
+    color: white;
+    text-decoration: none;
+}
+.iconset{
+    height: clamp(1.4rem, 1.7vw, 1.7rem); 
+    width: clamp(3rem, 4vw, 4rem);
     display: flex;
     justify-content: space-between;
 }
-.circles .circle{
+.iconset .circle{
     background-color: rgba(255, 255, 255, 0.775);
     height: 100%;
     width: 45%;
@@ -93,4 +114,157 @@ html , body{
     color: black;
     text-align: center;
     justify-content: center;
+}
+
+    #second {
+    padding-top: clamp(4vw, 8vw, 10vw);
+    padding-left: clamp(2vw, 3vw, 4vw);
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+#elem {
+    position: relative;
+    border-top: 1px solid #888;
+    width: 85%;
+    height: calc(clamp(2rem, 6vw, 6rem) * 2.5); /* Height based on h1 font size */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(2rem, 3vw, 3rem) 2vw; /* Added vertical padding */
+}
+
+#elem h1 {
+    opacity: .6;
+    font-size: clamp(2rem, 6vw, 6rem);
+    color: white;
+    text-transform: uppercase;
+    line-height: 1; /* Added to ensure consistent text height */
+}
+
+#elem h4 {
+    color: white;
+    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+    text-transform: uppercase;
+}
+
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+
+#elem img{
+    opacity: 0;
+    /* width: clamp(8rem, 16vw, 16rem); */
+    height: 140%;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: none;
+}
+
+#about{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5rem;
+    padding: 10vw 0;
+    padding-top: 20vw;
+    width: 100%;
+    padding-left: 30vw;
+    /* height: 100vh; */
+    background-color: rgb(0, 0, 0);
+}
+
+#about img{
+    height: 250px;
+}
+
+#about #textabout{
+    padding-top: 5rem;
+    color: white;
+    width: 45%;
+    font-size: 1.2rem;
+}
+
+#textabout h5{
+    opacity: .6;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+#textabout p{
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+#textabout a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 1px solid #888;
+    border-radius: 100px;
+    padding: .5vw 1vw;
+}
+
+#subscribe{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 30px;
+}
+
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    /* padding: 20px 30px; */
+    text-transform: uppercase;
+    padding: 5rem 0;
+}
+
+#footerleft{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+
+#footeright{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+#footeright a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#minicircle{
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
 }

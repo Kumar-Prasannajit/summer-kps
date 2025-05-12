@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loco.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -12,33 +13,95 @@
 </head>
 <body>
     <div id="main">
+        <div id="minicircle"></div>
         <div id="hero">
             <div id="nav">
                 <a href="#">Cynthia Ugwu</a>
                 <h4>menu+</h4>
             </div>
             <div id="heromain">
-                <h1>Product</h1>
+                <div class="bounding">
+                    <h1 class="boundingelem">Product</h1>
+                </div>
                 <div id="blocktxt">
-                    <h1 id="secondh1">Designer</h1>
-                    <h5>Based in toronto</h5>
+                    <div class="bounding">
+                        <h1 id="secondh1" class="boundingelem">Designer</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingelem">Based in toronto</h5>
+                    </div>
                 </div>
                 <div id="smalldesc">
-                    <h4>Available for Full Time & Freelance</h4>
-                    <h4>work from Sep ‘24</h4>
+                    <div class="bounding">
+                        <h4 class="boundingelem">Available for Full Time & Freelance</h4>
+                    </div>
+                    <div class="bounding">
+                        <h4 class="boundingelem">work from Sep ‘24</h4>
+                    </div>
                 </div>
             </div>
             <div id="herofooter">
-                <h4>Previously worked at <i class="ri-arrow-right-up-line"></i><br>Code and Theory</h4>
-                <h4>Protopie ambassador <i class="ri-arrow-right-up-line"></i></h4>
-                <div class="circles">
+                <a href="#">Previously worked at <i class="ri-arrow-right-up-line"></i><br>Code and Theory</a>
+                <a href="#">Protopie ambassador <i class="ri-arrow-right-up-line"></i></a>
+                <div class="iconset">
                     <div class="circle"><i class="ri-arrow-down-line"></i></div>
                     <div class="circle"><i class="ri-arrow-down-line"></i></div>
                 </div>
             </div>
         </div>
+        <div id="second">
+            <div id="elem">
+                <img src="lucid-motors.webp" alt="">
+                <h1>lucid motors</h1>
+                <h4>2023</h4>
+            </div>
+            <div id="elem">
+                <img src="baron-capital.webp" alt="">
+                <h1>Baron capital</h1>
+                <h4>2023</h4>
+            </div>
+            <div id="elem">
+                <img src="nfl.webp" alt="">
+                <h1>nfl</h1>
+                <h4>2024</h4>
+            </div>
+            <div id="elem">
+                <img src="placenew.webp" alt="">
+                <h1>placenew</h1>
+                <h4>2024</h4>
+            </div>
+            <div id="elem" class="elemlast">
+                <img src="somos.webp" alt="">
+                <h1>somos</h1>
+                <h4>2023</h4>
+            </div>
+        </div>
+        <div id="about">
+            <img src="cynthia.webp" alt="">
+            <div id="textabout">
+                <h5>(About me)</h5>
+                <p>I'm a product and motion designer who loves creating things that are not just eye candy but also fix life's little hiccups. When I'm not glued to my computer like a robot or scribbling on my iPad, you might catch me leveling up in video games, snapping photos like a wannabe pro, or watching football because football is life. My design philosophy? Keep it snazzy, make it work, and sprinkle in a bit of fun. I'm the designer you want on your team if you want people to exclaim, "I need that in my life!".</p>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+        <div id="subscribe">
+            <h5>Oops, almost forgot…</h5>
+            <h3>SUBSCRIBE TO MY YOUTUBE CHANNEL <i class="ri-arrow-down-line"></i></h3>
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <h5>&copy; 2025</h5>
+                <h5>8:00 AM ET</h5>
+            </div>
+            <div id="footeright">
+                <a href="#">Linkdin</a><a href="#">X/twitter</a><a href="#">instagram</a><a href="">youtube</a>
+            </div>
+        </div>
     </div>
-
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Locomotive CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

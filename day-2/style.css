@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General Sans;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#hero #nav{
+    color: white;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero #nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#hero #nav h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#heromain{
+    width: 100%;
+    color: white;
+    padding: 10px 45px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+#heromain h1{
+    font-size: 10rem;
+    opacity: .6;
+}
+
+#heromain #secondh1{
+    margin-left: 6vw;
+    opacity: .6;
+}
+
+#blocktxt{
+    width: fit-content;
+}
+#blocktxt h5{
+    text-align: right;
+}
+
+#smalldesc{
+    margin-top: 10rem;
+}
+
+#smalldesc h4{
+    text-align: right;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+#herofooter{
+    padding: 0px 40px;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.circles{
+    height: 1.7rem;
+    width: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.circles .circle{
+    background-color: rgba(255, 255, 255, 0.775);
+    height: 100%;
+    width: 45%;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}

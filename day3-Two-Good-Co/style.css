@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 11111;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#svg1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#svg2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar #nav-part2 #links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-part2 #links {
+    position: relative;
+    transform: translateY(0);
+}
+
+#nav-part2 #links a{
+    text-decoration: none;
+    color: black;
+    font-family: Futura Now Headline;
+    font-size: 0.9vw;
+    padding: 0 2vw;
+    text-transform: uppercase;
+}
+
+#navbar #icons{
+    display: flex;
+    height: 2.5vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+}
+
+#navbar #icons i{
+    font-size: 1.5vw;
+    color: black;
+    padding: 0 1.3vw;
+}
+
+#cursor{
+    z-index: -1;
+    height: 110px;
+    width: 110px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 9;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: antiquewhite; */
+    padding: 0 1vw;
+    padding-top: 14vh;
+}
+
+#page1 h1{
+    font-size: 14vw;
+    font-family: Futura Now Headline Black;
+    text-transform: uppercase;
+    line-height: 12vw;
+    letter-spacing: -8px;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 2vw;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 2.2vw 1.5vw;
+    font-family: Futura Now Headline Black;
+    text-transform: uppercase;
+    position: fixed;
+    color: #fff;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 1.3vw;
+    opacity: 0;
+    scale: 0;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+    background-color: #fff;
+}
+
+.elem{
+    height: 100%;
+    width: 31%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+#page2 .elem #dets{
+    height: 60px;
+    width: 70%;
+    position: absolute;
+    border-radius: 50px;
+    background-color: palegoldenrod;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    z-index: 1;
+    height: 60vh;
+    width: 34vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+   #page1{
+    min-height: 70vh;
+    padding: 0 3vw;
+    padding-top: 18vh;
+    }
+   
+    #page1 h1{
+    font-size: 15.5vw;
+    line-height: 14vw;
+    letter-spacing: -3px;
+    }
+
+    #video-container{
+    height: 25vh;
+    margin-top: 2vw;
+    }
+
+    #video-container #play{
+    padding: 9vw 6.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;
+    opacity: 1;
+    scale: 1;
+    }
+
+    #page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 3vw;
+    background-color: #fff;
+    flex-direction: column;
+    }
+
+    .elem{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    margin-bottom: 3vw;
+    }
+
+    #page2 .elem #dets{
+    height: 40px;
+    width: 70%;
+    position: absolute;
+    border-radius: 50px;
+    background-color: palegoldenrod;
+    }
+
+    #page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+
+    .child{
+    z-index: 1;
+    height: 60vh;
+    width: 88vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6vw;
+    justify-content: center;
+    }
+
+    .child img{
+    height: 100%;
+    width: 100%;
+    }
+
+    #navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 11111;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    #svg1, #svg2 {
+        width: 40px; /* Make SVGs smaller */
+        height: auto;
+    }
+
+    #nav-part2 #links {
+        display: none !important;; /* Hide links on mobile */
+    }
+
+    #navbar #icons{
+        display: flex;
+        height: 35px; /* Increase height for better touch targets */
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f7f7;
+        border-radius: 50px;
+}
+
+    #navbar #icons i{
+        font-size: 18px; /* Absolute size for icons */
+        color: black;
+        padding: 0 12px; /* Increased gap between icons */
+    }
+}

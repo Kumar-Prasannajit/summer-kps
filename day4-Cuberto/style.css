@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Averta CY W100;
+}
+
+*::selection{
+    background: #000;
+    color: #fff;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+#nav img{
+    padding-top: 20px;
+    width: 100px;
+}
+#navright{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+#homemain{
+    width: 100%;
+    padding: 14vw 18vw;
+}
+
+.headings{
+    display: flex;
+    gap: 40px;
+}
+
+#homemain h1{
+       font-size: 1.5vw;
+       font-weight: 400;
+}
+
+#homemain .headings h1{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    font-size: 6.2vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -5px;
+}
+
+#homemain .headings h1:hover{
+    color: black;
+}
+
+#homelast p{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#homelast{
+    width: 80%;
+    padding: 3.5vw 18vw;
+    height: fit-content;
+}
+
+#featured{
+    padding: 10vw 15vw;
+}
+
+#fheading>h1{
+    font-size: 4vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+#fimages{
+    width: 100%;
+    margin-top: 5vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#fleft{
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+}
+
+#fleftelem{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fleftelem h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#fleftelem h1{
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+}
+
+#fleftelem h4{
+    opacity: .5;
+}
+
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+
+#fright .images{
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+}
+
+.btndiv button{
+    padding: 1.3vw 2vw;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    width: 60%;
+    line-height: 1;
+    font-size: 3.8vw;
+    font-weight: 400;
+}
+
+#dev p{
+    font-size: 1.5vw;
+    letter-spacing: -.1px;
+    margin-top: 3vw;
+    width: 60%;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide{
+    width: 30%;
+}
+
+.slide .img{
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .tag{
+    width: fit-content;
+    border-radius: 100px;
+    padding: 10px 22px;
+    margin: 20px 0;
+    background-color: #f7f7f7;
+}
+
+.slide h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+    letter-spacing: -.1px;
+}

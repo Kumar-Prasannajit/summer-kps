@@ -1,0 +1,4 @@
+ .grid>div {
+            grid-row: var(--r);
+            grid-column: var(--c);
+        }
